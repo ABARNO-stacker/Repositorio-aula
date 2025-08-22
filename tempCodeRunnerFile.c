@@ -1,23 +1,28 @@
-/*Aula de algoritmos 18/08/2025, Universidade Católica de Brasília*/
 #include <stdio.h>
-
 int main(){
-    //definição de valores
-    int idade;
-    int altura;
-    int peso;
+    float valor_a,valor_b;
+    float resultado;
+    char operacao;
 
+    printf("Digite o valor a: ");
+    scanf("%f",&valor_a);
+    printf("Digite o valo_b:");
+    scanf("%f",&valor_b);
 
-    printf("Digite a sua idade:");
-    scanf("%d",&idade);
+    printf("[S]Soma | [U]Subtracao | [M]Multiplicacao | [D]Divisao\n");
+    printf("Digite a operacao: ");
+    scanf("%s",&operacao);
 
-    printf("Digite a sua altura:");
-    scanf("%d",&altura);
-    
-    printf("Digite o seu peso:");
-    scanf("%d",&peso);
+    if(operacao=='S'){
+        resultado=valor_a+valor_b;
+    }else if(operacao=='U'){
+        resultado=valor_a-valor_b;
+    }else if(operacao=='M'){
+        resultado=valor_a*valor_b;
+    }else if(operacao=='D'){
+        resultado=valor_a/valor_b;
+    }
 
-   
-    printf("Sua idade, sua altura e seu peso sao: %d\n", idade altura peso);
-    return 0;
+    printf("Meu resultado e %f, resultado");
+    return 0
 }
