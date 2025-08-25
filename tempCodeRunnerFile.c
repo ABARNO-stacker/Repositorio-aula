@@ -1,28 +1,27 @@
-#include <stdio.h>
-int main(){
-    float valor_a,valor_b;
-    float resultado;
-    char operacao;
+    #include <stdio.h>
+    int main(){
+        float valor_a,valor_b;
+        float resultado;
+        char operacao;
 
-    printf("Digite o valor a: ");
-    scanf("%f",&valor_a);
-    printf("Digite o valo_b:");
-    scanf("%f",&valor_b);
+        printf("Digite o valor a: ");
+        scanf("%f",&valor_a);
+        printf("Digite o valo_b:");
+        scanf("%f",&valor_b);
 
-    printf("[S]Soma | [U]Subtracao | [M]Multiplicacao | [D]Divisao\n");
-    printf("Digite a operacao: ");
-    scanf("%s",&operacao);
+        printf("[S]Soma | [U]Subtracao | [M]Multiplicacao | [D]Divisao\n");
+        printf("Digite a operacao: ");
+        scanf("%s",&operacao);
 
-    if(operacao=='S'){
-        resultado=valor_a+valor_b;
-    }else if(operacao=='U'){
-        resultado=valor_a-valor_b;
-    }else if(operacao=='M'){
-        resultado=valor_a*valor_b;
-    }else if(operacao=='D'){
-        resultado=valor_a/valor_b;
-    }
+        if(operacao=='S'){
+            resultado=valor_a+valor_b;
+        }else if(operacao=='U'){
+            resultado=valor_a-valor_b;
+        }else if(operacao=='M'){
+            resultado=valor_a*valor_b;
+        }else if(operacao=='D'){
+            resultado=valor_a/valor_b;
+        }
 
-    printf("Meu resultado e %f, resultado");
-    return 0
-}
+        printf("Meu resultado e %f, resultado");
+        return 0;
